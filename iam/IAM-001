@@ -1,0 +1,21 @@
+## IAM-001 — Administrative Permissions
+
+### Finding
+
+The IAM user `charlie` has the AWS managed policy `AdministratorAccess` attached directly.
+
+### Observation
+
+The user has broad administrative permissions across the AWS account.
+
+### Risk
+
+If the credentials associated with this identity were compromised, the attacker could potentially perform administrative actions across the AWS environment.
+
+### Recommendation
+
+Review whether administrative permissions are required. Where possible, replace broad administrative permissions with least-privilege permissions appropriate to the user's responsibilities.
+
+### Status
+
+Under Assessment
